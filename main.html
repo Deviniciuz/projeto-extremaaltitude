@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>extremAAltitude</title>
+    <link rel="stylesheet" href=".//Lib/bootstrap.min.css">
+
+    <style>
+
+        body {
+            background-color: rgb(195, 184, 184);
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        section {
+            background-color:  rgb(195, 184, 184);
+            padding-top: 30px;
+            margin-top: 0;
+
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: rgb(195, 184, 184);
+        }
+
+        #carouselExample img {
+            height: 400px;
+            object-fit: cover;
+        }
+
+        #opcoes {
+            margin-top: 0;
+            padding-top: 30px;
+        }
+
+        h1{
+            color: #fff;
+        }
+
+        .card .hoverable:hover {
+        background-color: rgba(127, 180, 237, 0.2);
+        transition: background-color 0.3s ease;
+    }
+
+    </style>
+
+</head>
+<body>
+    <header id="cabecalho" class="fixed-top">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>extremAAltitude</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse " data-bs-target="#sobre" >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <nav class="collapse navbar-collapse justify-content-end" id="sobre">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" href="#sobre">Sobre</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#opcoes">Opções</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="carouselExample" class=" carousel carousel-fade slide " data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <div data-bs-interval="2000" class="carousel-item active">
+                <img src="./imagens/card 1 aconcagua.jpg" class="d-block w-100" alt="slide 1">
+            </div>
+
+            <div data-bs-interval="2000" class="carousel-item">
+                <img src="./imagens/card 2 everest.jpg" class="d-block w-100" alt="slide 2">
+            </div>
+
+            <div data-bs-interval="2000" class="carousel-item">
+                <img src="./imagens/card 3 denali.jpg" class="d-block w-100" alt="slide 3">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div> 
+
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section class="m-3" id="sobre">
+            <h2 class="font-weight-bold text-light">Sobre Alta Montanha</h2>
+            <ul class="list-unstyled m-4">
+                <li>
+                    <p class="m-0">
+                        Fazer alta montanha é uma experiência desafiadora e enriquecedora que oferece uma série de vantagens tanto físicas quanto mentais. Ao embarcar em uma jornada para conquistar picos elevados, os praticantes de montanhismo desfrutam de benefícios únicos que vão além da simples superação de obstáculos. 
+                    </p>
+
+                    <p>
+                        Ao embarcar em uma jornada para conquistar picos elevados, os praticantes de montanhismo desfrutam de benefícios únicos que vão além da simples superação de obstáculos. 
+                    </p>
+                </li>
+            </ul> 
+        </section>
+
+        <section id="opcoes">
+            <div class="container">
+                <div class="row">         
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="card text-bg-dark">
+                            <div class="card-header">
+                                Aconcágua
+                            </div>
+
+                            <img src="./imagens/card 1 aconcagua.jpg" />
+
+                            <div class="card-body hoverable">
+                                <h4 class="card-title">Montanha Aconcágua</h4>
+                                <h5 class="card-subtitle">Altitude 6.962m</h5>
+                                <p class="card-text">
+                                    Montanha mais alta fora da Ásia, com 6.961 metros de altitude, e, por extensão, o ponto mais alto tanto no hemisfério ocidental quanto no hemisfério sul.</p>
+
+                                <div>
+                                    <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">
+                                        Opções de Trekking
+                                    </button>
+                                    
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li class="dropdown-item">
+                                            <a class="text-light" href="#">1 dia</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a class="text-light" href="#">2 Dias</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a class="text-light" href="#">3 Dias</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a class="text-light" href="#">Chegar no Topo (6.962m)</a>
+                                        </li>
+                                    </ul>
+                        
+                                </div>
+
+                            </div>
+
+                            <footer class="card-footer">
+                                Postado em: <tinme>06/03/2024 às 8:00</tinme>
+                            </footer>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="card text-bg-dark">
+                            <div class="card-header">
+                                Everest
+                            </div>
+                            <img src="./imagens/card 2 everest.jpg" />
+                            <div class="card-body hoverable">
+                                <h4 class="card-title">Monte Everest</h4>
+                                <h5 class="card-subtitle">Altutide 8.849m</h5>
+                                <p class="card-text">
+                                    Montanha de maior altitude da Terra localizado no Himalaia. O maciço do Everest inclui, entre outros os picos do Lhotse, Nuptse e Changtse.
+                                </p>
+
+                                <div>
+                                    <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">
+                                        Opções de Trekking
+                                    </button>
+                                    
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li class="dropdown-item">
+                                            <a class="text-light" href="#">Base Sul (5.364m)</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a class="text-light" href="#">Base Norte (5.150m)</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a class="text-light" href="#">Chegar no Topo (8.849m)</a>
+                                        </li>
+                                    </ul>
+                        
+                                </div>
+
+                            </div>
+
+                            <footer class="card-footer">
+                                Postado em: <tinme>06/03/2024 às 8:00</tinme>
+                            </footer>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="card text-bg-dark">
+                            <div class="card-header">
+                                Denali
+                            </div>
+                            <img src="./imagens/card 3 denali.jpg" />
+                            <div class="card-body hoverable">
+                                <h4 class="card-title">Monte Denali</h4>
+                                <h5 class="card-subtitle">Altitude 6.190m</h5>
+                                <p class="card-text">
+                                    Montanha mais alta na América do Norte localizado na Cordilheira do Alasca no interior do estado do Alasca, nos EUA sendo peça central do Parque Nacional.
+                                </p>
+
+                                    <div>
+                                        <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">
+                                            Opções de Trekking
+                                        </button>
+                                        
+                                        <ul class="dropdown-menu dropdown-menu-dark">
+                                            <li class="dropdown-item">
+                                                <a class="text-light" href="#">1ª Base (2.240m)</a>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <a class="text-light" href="#">2ª Base (2.290m)</a>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <a class="text-light" href="#">3ª Base (3.350m) </a>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <a class="text-light" href="#">4ª Base (4.390m) </a>
+                                            </li>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a class="text-light" href="#">Chegar no Topo (6.190m)</a>
+                                        </li>
+                                        </ul>
+                            
+                                    </div>
+                                </div>
+
+                            <footer class="card-footer">
+                                Postado em: <tinme>06/03/2024 às 8:00</tinme>
+                            </footer>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <footer>
+        <div class="container">
+            <p>
+                2023&copy; extremAAltitude - Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script src="./Lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
